@@ -63,16 +63,5 @@ window.renderStatistics = function (ctx, players, times) {
 
     ctx.fillStyle = '#000';
     ctx.fillText(Math.round(times[i]), barX, scoreY + GAP * 21);
-
-    //var time = [1.1313, 5.133113, 7.31313, 6.31313, 8.313131, 10.311331];
-    //console.log(Math.round(time[3]));
-
-    /* for (var j = 0; j < times.length; j++) {
-      var timesIndex = j;
-      var playerTime = times[timesIndex];
-      var result = Math.round(playerTime);
-      ctx.fillStyle = '#000';
-      ctx.fillText(result, barX, scoreY);
-    } */
   }
 };
