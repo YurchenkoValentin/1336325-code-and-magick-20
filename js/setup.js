@@ -16,12 +16,12 @@ var eyesColor = ['black', 'red', 'blue', 'yellow', 'green'];
 var wizards = [];
 
 for (var i = 0; i < WIZARD_COUNT; i++) {
-  var randomNameTwo = names[Math.floor(Math.random() * names.length)];
-  var randomSurnameTwo = lastNames[Math.floor(Math.random() * lastNames.length)];
+  var randomName = names[Math.floor(Math.random() * names.length)];
+  var randomLastName = lastNames[Math.floor(Math.random() * lastNames.length)];
   var randomCoat = coatColor[Math.floor(Math.random() * coatColor.length)];
   var randomEyes = eyesColor[Math.floor(Math.random() * eyesColor.length)];
 
-  var wizardName = randomNameTwo + ' ' + randomSurnameTwo;
+  var wizardName = randomName + ' ' + randomLastName;
 
   var character = {
     name: wizardName,
