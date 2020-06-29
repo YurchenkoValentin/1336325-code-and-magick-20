@@ -21,15 +21,15 @@ for (var i = 0; i < WIZARD_COUNT; i++) {
   var randomCoat = coatColor[Math.floor(Math.random() * coatColor.length)];
   var randomEyes = eyesColor[Math.floor(Math.random() * eyesColor.length)];
 
-  var name = randomNameTwo + ' ' + randomSurnameTwo;
+  var wizardName = randomNameTwo + ' ' + randomSurnameTwo;
 
-  var wizard = {
-    name: name,
+  var character = {
+    name: wizardName,
     coatColor: randomCoat,
     eyesColor: randomEyes
   };
 
-  wizards.push(wizard);
+  wizards.push(character);
 }
 
 var renderWizard = function (wizard) {
@@ -43,8 +43,8 @@ var renderWizard = function (wizard) {
 };
 
 var fragment = document.createDocumentFragment();
-for (var i = 0; i < wizards.length; i++) {
-  fragment.appendChild(renderWizard(wizards[i]));
+for (var j = 0; j < wizards.length; j++) {
+  fragment.appendChild(renderWizard(wizards[j]));
 }
 similarListElement.appendChild(fragment);
 
